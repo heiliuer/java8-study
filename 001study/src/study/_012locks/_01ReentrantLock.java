@@ -13,6 +13,7 @@ public class _01ReentrantLock {
 
     private void testLock() {
         ExecutorService executor = Executors.newFixedThreadPool(2);
+
         ReentrantLock lock = new ReentrantLock();
 
         executor.submit(() -> {
