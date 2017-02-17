@@ -10,7 +10,7 @@ public class Test {
 
             @Override
             public double calulate(int a) {
-//                or sqrt(a)
+//                or sqrt(a) 调用接口已经实现的方法
                 return this.sqrt(a);
             }
         };

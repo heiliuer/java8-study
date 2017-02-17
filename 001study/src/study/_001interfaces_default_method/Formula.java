@@ -7,7 +7,7 @@ public interface Formula {
 
     double calulate(int a);
 
-    //    可以再接口定义中实现部分方法
+    // 可以再接口定义中实现部分方法
     default double sqrt(int a) {
         return Math.sqrt(a);
     }

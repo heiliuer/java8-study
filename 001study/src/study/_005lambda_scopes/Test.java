@@ -25,13 +25,16 @@ public class Test {
         Converter<Float, String> converter = from -> Float.toString(from * times);
         //times = 20;//times 不能被修改 否则报错
         //Error:(12, 76) java: 从lambda 表达式引用的本地变量必须是最终变量或实际上的最终变量
+        System.out.println(converter.convert(20F));
 
         int plus = 20;
         converter = from -> Float.toString(from + plus);
+        System.out.println(converter.convert(20F));
         //OK
 
         final int minus = 20;
         converter = from -> Float.toString(from - minus);
+        System.out.println(converter.convert(20F));
         //OK
     }
 }
